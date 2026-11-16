@@ -3,120 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- 修改：浏览器标签页标题和搜索引擎摘要 -->
-  <title>[Your Name]</title>
-  <meta name="description" content="[Your Name] — [Position] at [University]. Research on [your field].">
+  <title>Ugly Avatar</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <!--
+    Face generator from "ugly-avatar" by Xuan Tang (txstc55)
+    https://github.com/txstc55/ugly-avatar
+    Licensed under CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/);
+    ported to plain JavaScript, see js/ugly-avatar/ for details.
+  -->
 </head>
 <body>
-  <div class="layout">
-
-    <!-- ============ 左侧：个人信息 ============ -->
-    <aside class="profile">
-      <!-- 修改：把头像放到 assets/avatar.jpg，然后把下面这行换成
-           <img class="avatar" src="assets/avatar.jpg" alt="[Your Name]"> -->
-      <div class="avatar avatar-placeholder" aria-hidden="true">YN</div>
-
-      <h1 class="name">[Your Name]</h1>
-      <p class="name-alt">[Chinese Name]</p>
-      <p class="role">[Position]</p>
-      <p class="affiliation">[Department]<br>[University]</p>
-
-      <!-- 修改：不需要的链接整行删掉即可 -->
-      <ul class="links">
-        <li><a href="mailto:[your-email]">Email</a></li>
-        <li><a href="#">Google Scholar</a></li>
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">ORCID</a></li>
-        <li><a href="#">CV (PDF)</a></li>
-      </ul>
-    </aside>
-
-    <!-- ============ 右侧：正文 ============ -->
-    <main class="content">
-
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          [A short introduction: who you are, where you work, and what problems you study.
-          Two to four sentences is usually enough.]
-        </p>
-        <p>
-          [Optional second paragraph: background, advisors, or what you are looking for —
-          e.g. collaborations or positions.]
-        </p>
-        <h3>Research Interests</h3>
-        <ul class="interests">
-          <li>[Research interest 1]</li>
-          <li>[Research interest 2]</li>
-          <li>[Research interest 3]</li>
-        </ul>
-      </section>
-
-      <section id="news">
-        <h2>News</h2>
-        <!-- 修改：新的放最上面，日期格式统一即可 -->
-        <ul class="news">
-          <li><span class="date">[YYYY-MM]</span><span>[News item, e.g. a paper accepted at a venue.]</span></li>
-          <li><span class="date">[YYYY-MM]</span><span>[News item.]</span></li>
-          <li><span class="date">[YYYY-MM]</span><span>[News item.]</span></li>
-        </ul>
-      </section>
-
-      <section id="publications">
-        <h2>Publications</h2>
-        <p class="note">* equal contribution</p>
-        <!-- 修改：每篇论文复制一个 <li class="pub">…</li>；
-             自己的名字用 <strong> 加粗；没有的链接删掉 -->
-        <ol class="pubs">
-          <li class="pub">
-            <span class="venue">[Venue Year]</span>
-            <div>
-              <p class="pub-title">[Paper Title]</p>
-              <p class="pub-authors"><strong>[Your Name]</strong>, [Co-author], [Co-author]</p>
-              <p class="pub-links"><a href="#">PDF</a><a href="#">Code</a><a href="#">BibTeX</a></p>
-            </div>
-          </li>
-          <li class="pub">
-            <span class="venue">[Venue Year]</span>
-            <div>
-              <p class="pub-title">[Paper Title]</p>
-              <p class="pub-authors">[Co-author]*, <strong>[Your Name]</strong>*, [Co-author]</p>
-              <p class="pub-links"><a href="#">PDF</a><a href="#">arXiv</a></p>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul class="projects">
-          <li>
-            <p class="project-title"><a href="#">[Project Name]</a></p>
-            <p>[One-line description of what it does and why it matters.]</p>
-          </li>
-          <li>
-            <p class="project-title"><a href="#">[Project Name]</a></p>
-            <p>[One-line description.]</p>
-          </li>
-        </ul>
-      </section>
-
-      <section id="education">
-        <h2>Education</h2>
-        <ul class="timeline">
-          <li><span class="date">[YYYY – now]</span><span><strong>[Degree]</strong>, [University]</span></li>
-          <li><span class="date">[YYYY – YYYY]</span><span><strong>[Degree]</strong>, [University]</span></li>
-        </ul>
-      </section>
-
-      <footer>
-        <!-- 修改：每次更新内容时改一下日期 -->
-        <p>Last updated: [YYYY-MM-DD]</p>
-      </footer>
-    </main>
-
+  <noscript>
+    <strong>Sorry, this page needs JavaScript enabled to draw a face.</strong>
+  </noscript>
+  <div class="container">
+    <div id="face" class="face"></div>
+    <button id="another" type="button">ANOTHER</button>
+    <button id="download" type="button">DOWNLOAD</button>
   </div>
+
+  <script type="module">
+    import { mount } from "./js/ugly-avatar/face_generator.js";
+    mount({
+      holder: document.getElementById("face"),
+      anotherButton: document.getElementById("another"),
+      downloadButton: document.getElementById("download"),
+    });
+  </script>
 </body>
 </html>
