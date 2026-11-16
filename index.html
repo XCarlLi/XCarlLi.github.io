@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- 修改：浏览器标签页标题和搜索引擎摘要 -->
-  <title>[Your Name]</title>
-  <meta name="description" content="[Your Name] — [Position] at [University]. Research on [your field].">
+  <title>[你的名字]</title>
+  <meta name="description" content="[你的名字]，[学校][职位]，研究方向为[你的领域]。">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,21 +15,21 @@
     <!-- ============ 左侧：个人信息 ============ -->
     <aside class="profile">
       <!-- 修改：把头像放到 assets/avatar.jpg，然后把下面这行换成
-           <img class="avatar" src="assets/avatar.jpg" alt="[Your Name]"> -->
-      <div class="avatar avatar-placeholder" aria-hidden="true">YN</div>
+           <img class="avatar" src="assets/avatar.jpg" alt="[你的名字]"> -->
+      <div class="avatar avatar-placeholder" aria-hidden="true">头像</div>
 
-      <h1 class="name">[Your Name]</h1>
-      <p class="name-alt">[中文名]</p>
-      <p class="role">[Position]</p>
-      <p class="affiliation">[Department]<br>[University]</p>
+      <h1 class="name">[你的名字]</h1>
+      <p class="name-alt">[英文名]</p>
+      <p class="role">[职位]</p>
+      <p class="affiliation">[院系]<br>[学校]</p>
 
       <!-- 修改：不需要的链接整行删掉即可 -->
       <ul class="links">
-        <li><a href="mailto:[your-email]">Email</a></li>
-        <li><a href="#">Google Scholar</a></li>
+        <li><a href="mailto:[你的邮箱]">邮箱</a></li>
+        <li><a href="#">谷歌学术</a></li>
         <li><a href="#">GitHub</a></li>
         <li><a href="#">ORCID</a></li>
-        <li><a href="#">CV (PDF)</a></li>
+        <li><a href="#">简历（PDF）</a></li>
       </ul>
     </aside>
 
@@ -37,52 +37,50 @@
     <main class="content">
 
       <section id="about">
-        <h2>About</h2>
+        <h2>关于我</h2>
         <p>
-          [A short introduction: who you are, where you work, and what problems you study.
-          Two to four sentences is usually enough.]
+          [一段简短的自我介绍：你是谁、在哪里工作、研究什么问题。两到四句话通常就够了。]
         </p>
         <p>
-          [Optional second paragraph: background, advisors, or what you are looking for —
-          e.g. collaborations or positions.]
+          [可选的第二段：教育背景、导师，或者你正在寻找的机会，比如合作或职位。]
         </p>
-        <h3>Research Interests</h3>
+        <h3>研究方向</h3>
         <ul class="interests">
-          <li>[Research interest 1]</li>
-          <li>[Research interest 2]</li>
-          <li>[Research interest 3]</li>
+          <li>[研究方向一]</li>
+          <li>[研究方向二]</li>
+          <li>[研究方向三]</li>
         </ul>
       </section>
 
       <section id="news">
-        <h2>News</h2>
+        <h2>最新动态</h2>
         <!-- 修改：新的放最上面，日期格式统一即可 -->
         <ul class="news">
-          <li><span class="date">[YYYY-MM]</span><span>[News item, e.g. a paper accepted at a venue.]</span></li>
-          <li><span class="date">[YYYY-MM]</span><span>[News item.]</span></li>
-          <li><span class="date">[YYYY-MM]</span><span>[News item.]</span></li>
+          <li><span class="date">[年-月]</span><span>[动态内容，例如某篇论文被某会议接收。]</span></li>
+          <li><span class="date">[年-月]</span><span>[动态内容。]</span></li>
+          <li><span class="date">[年-月]</span><span>[动态内容。]</span></li>
         </ul>
       </section>
 
       <section id="publications">
-        <h2>Publications</h2>
-        <p class="note">* equal contribution</p>
+        <h2>发表论文</h2>
+        <p class="note">* 表示同等贡献</p>
         <!-- 修改：每篇论文复制一个 <li class="pub">…</li>；
              自己的名字用 <strong> 加粗；没有的链接删掉 -->
         <ol class="pubs">
           <li class="pub">
-            <span class="venue">[Venue Year]</span>
+            <span class="venue">[会议 年份]</span>
             <div>
-              <p class="pub-title">[Paper Title]</p>
-              <p class="pub-authors"><strong>[Your Name]</strong>, [Co-author], [Co-author]</p>
-              <p class="pub-links"><a href="#">PDF</a><a href="#">Code</a><a href="#">BibTeX</a></p>
+              <p class="pub-title">[论文标题]</p>
+              <p class="pub-authors"><strong>[你的名字]</strong>，[合作者]，[合作者]</p>
+              <p class="pub-links"><a href="#">PDF</a><a href="#">代码</a><a href="#">BibTeX</a></p>
             </div>
           </li>
           <li class="pub">
-            <span class="venue">[Venue Year]</span>
+            <span class="venue">[期刊 年份]</span>
             <div>
-              <p class="pub-title">[Paper Title]</p>
-              <p class="pub-authors">[Co-author]*, <strong>[Your Name]</strong>*, [Co-author]</p>
+              <p class="pub-title">[论文标题]</p>
+              <p class="pub-authors">[合作者]*，<strong>[你的名字]</strong>*，[合作者]</p>
               <p class="pub-links"><a href="#">PDF</a><a href="#">arXiv</a></p>
             </div>
           </li>
@@ -90,30 +88,30 @@
       </section>
 
       <section id="projects">
-        <h2>Projects</h2>
+        <h2>项目</h2>
         <ul class="projects">
           <li>
-            <p class="project-title"><a href="#">[Project Name]</a></p>
-            <p>[One-line description of what it does and why it matters.]</p>
+            <p class="project-title"><a href="#">[项目名称]</a></p>
+            <p>[一句话介绍：它做什么、为什么重要。]</p>
           </li>
           <li>
-            <p class="project-title"><a href="#">[Project Name]</a></p>
-            <p>[One-line description.]</p>
+            <p class="project-title"><a href="#">[项目名称]</a></p>
+            <p>[一句话介绍。]</p>
           </li>
         </ul>
       </section>
 
       <section id="education">
-        <h2>Education</h2>
+        <h2>教育经历</h2>
         <ul class="timeline">
-          <li><span class="date">[YYYY – now]</span><span><strong>[Degree]</strong>, [University]</span></li>
-          <li><span class="date">[YYYY – YYYY]</span><span><strong>[Degree]</strong>, [University]</span></li>
+          <li><span class="date">[年份] – 至今</span><span><strong>[学位]</strong>，[学校]</span></li>
+          <li><span class="date">[年份] – [年份]</span><span><strong>[学位]</strong>，[学校]</span></li>
         </ul>
       </section>
 
       <footer>
         <!-- 修改：每次更新内容时改一下日期 -->
-        <p>Last updated: [YYYY-MM-DD]</p>
+        <p>最后更新：[年-月-日]</p>
       </footer>
     </main>
 
