@@ -33,5 +33,5 @@ git add -A && git commit -m "update homepage" && git push
 
 - **换头像**：把图片存为 `assets/avatar.jpg`，按 `index.html` 里头像处的注释替换那一行。
 - **加论文**：复制一个 `<li class="pub">…</li>` 块，自己的名字用 `<strong>` 加粗。
-- **放简历**：把 PDF 放进 `assets/`，把"简历（PDF）"链接的 `href` 改成 `assets/cv.pdf`。
+- **放 CV**：把 PDF 放进 `assets/`，把 CV 链接的 `href` 改成 `assets/cv.pdf`。
 - **改配色**：只改 `style.css` 开头的 `--accent`（主色）和 `--accent-soft`（浅底色）。
